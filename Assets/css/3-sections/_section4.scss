@@ -1,0 +1,376 @@
+
+.section4 {
+    position: relative;
+
+    img {
+        height: 480px;
+        z-index: -1;
+        margin-top: 639px;
+    }
+    .contentBox1 {
+        position: absolute;
+        width: 540px;
+        height: 543px;
+        background: white;
+        bottom: -270px;
+        left: 65px;
+        //top: 450;
+        z-index: 1;
+
+
+        p.kicker2 {
+            margin: 80px 0 0 90px;
+            text-transform: uppercase;
+            color: $ThemeColor;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h2 {
+            margin: 18px 0 32px 90px;
+            text-transform: uppercase;
+            font-size: 45px;  
+            font-family: 'Droid Serif', serif;
+        }
+        p {
+            margin: 0 50px 0 90px;
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            color: grey;
+        }
+
+        .cta1 {
+            background: white;
+            color: black;
+            font-size: 14px;
+            font-weight: bold;
+            justify-content: center;
+            width: 235px;
+            height: 60px;
+            border: 2px solid black;
+            margin: 37px 0 0 90px;
+            font-family: 'Open Sans', sans-serif;
+        
+
+            &:hover {
+                cursor: pointer;
+                background: rgb(233, 233, 233);
+            }
+            &:active {
+                position: relative;
+                top: 1px;
+            }
+        }
+        
+    }
+    .phoneBox {
+        @include size(180px);
+        background: rgb(33, 33, 33);
+        position: absolute;
+        left: 606px;
+        bottom: -176px;
+
+        
+        .fa-phone {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 27px;
+            margin: 0;
+            position: absolute;
+            left: 43%;
+            top: 28%;
+        }
+
+        p {
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 209px;
+            font-size: 20px;
+            margin: 0;
+            display: block;
+        }
+    }
+
+    .twitter {
+        @include size(90px);
+        background: white;
+        position: absolute;
+        left: 786px;
+        bottom: -85px;
+
+        &:hover {
+            cursor: pointer;
+            color: #4099FF;
+        }
+    }
+    .icon-twitter {
+        text-align: center;
+        line-height: 90px;
+        font-size: 27px;
+    }
+    .linkedin {
+        @include size(90px);
+        background: white;
+        position: absolute;
+        left: 786px;
+        bottom: -266px;
+        &:hover {
+            color: #03659A;
+            cursor: pointer;
+
+        }
+    }
+    .icon-linkedin {
+        text-align: center;
+        line-height: 90px;
+        font-size: 27px;
+
+    }
+    .email {
+        @include size(90px);
+        background: $ThemeColor;
+        position: absolute;
+        left: 876px;
+        bottom: 4px;
+        &:hover {
+            color: #CF283A;
+            cursor: pointer;
+
+        }
+    }
+    .fa-envelope-o {
+        text-align: center;
+        line-height: 90px;
+        font-size: 27px;
+        color: white;
+    }
+    .facebook {
+        @include size(90px);
+        background: black;
+        position: absolute;
+        left: 876px;
+        bottom: -176px;
+
+        &:hover {
+            color: #3D62B3;
+            cursor: pointer;
+            background: white;
+        }
+    }
+    .icon-facebook {
+        text-align: center;
+        line-height: 90px;
+        font-size: 27px;
+        color: white;
+    }
+    .instagram {
+        @include size(90px);
+        background: $ThemeColor;
+        position: absolute;
+        left: 966px;
+        bottom: -266px;
+        &:hover {
+            color: #D5708E;
+            cursor: pointer;
+
+        }
+    }
+    .icon-instagram {
+        text-align: center;
+        line-height: 90px;
+        font-size: 27px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        width: 766.73px;
+        margin: 0 0 395px 0;
+        .section4 {
+            img {
+                width: 766.73px;
+                height: 330px;
+            }
+            .contentBox1 {
+                position: absolute;
+                width: 354px;
+                height: 354px;
+                left: 30px;
+                top: 794px;
+
+                p.kicker2 {
+                    margin: 38px 0 0 45px;
+                    font-size: 14px; 
+                }
+    
+                h2 {
+                    margin: 15px 0 24px 45px;
+                    font-size: 24px;  
+                }
+                p {
+                    margin: 0 16px 0 45px;
+                    font-size: 14px;
+                }
+    
+                .cta1 {
+                    font-size: 14px;
+                    width: 180px;
+                    height: 39px;
+                    margin: 37px 0 0 90px;
+                }
+            }
+        }
+
+        .phoneBox {
+            @include size(60px);
+            height: 177px;
+            width: 180px;
+            left: 384px;
+            bottom: -175px;
+        
+        }
+
+        .twitter {
+            @include size(60px);
+            left: 564px;
+            bottom: -56px;
+        }
+        .icon-twitter {
+            line-height: 60px;
+
+        }
+        .linkedin {
+            @include size(60px);
+            left: 564px;
+            bottom: -175px;
+        }
+        .icon-linkedin {
+            line-height: 60px;
+
+        }
+        .email {
+            @include size(60px);
+            left: 624px;
+            bottom: 4px;
+        }
+        .fa-envelope-o {
+            line-height: 60px;
+        }
+        .facebook {
+            @include size(60px);
+            left: 624px;
+            bottom: -116px;
+        }
+        .icon-facebook {
+            line-height: 60px;
+        }
+        .instagram {
+            @include size(60px);
+            left: 624px;
+            bottom: -235px;
+        }
+        .icon-instagram {
+            line-height: 60px;
+
+        }
+    }
+}
+
+//MOBILE MEDIA QUERY
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 320px;
+        margin: 0 0 395px 0;
+        .section4 {
+            top: 678px;
+            img {
+                width: 100%;
+                height: 260px;
+            }
+            .contentBox1 {
+                width: 280px;
+                height: 365px;
+                left: 20px;
+                top: 794px;
+                
+
+                p.kicker2 {
+                    margin: 38px 0 0 45px;
+                    font-size: 15px; 
+                }
+
+                h2 {
+                    margin: 15px 0 24px 45px;
+                    font-size: 23px;  
+                }
+                p {
+                    margin: 0 16px 0 45px;
+                    font-size: 13px;
+                }
+
+                .cta1 {
+                    font-size: 14px;
+                    width: 180px;
+                    height: 39px;
+                    margin: 25px 0 0 54px;
+                }
+            }
+        }
+
+        .phoneBox {
+            width: 280px;
+            height: 140px;
+            left: 20px;
+            bottom: -397px;
+        }
+
+        .twitter {
+            @include size(56px);
+            left: 20px;
+            bottom: -454px;
+        }
+        .icon-twitter {
+            line-height: 56px;
+
+        }
+        .linkedin {
+            @include size(56px);
+            left: 188px;
+            bottom: -453px;
+        }
+        .icon-linkedin {
+            line-height: 56px;
+
+        }
+        .email {
+            @include size(56px);
+            left: 76px;
+            bottom: -453px;
+        }
+        .fa-envelope-o {
+            line-height: 56px;
+        }
+        .facebook {
+            @include size(56px);
+            left: 132px;
+            bottom: -453px;
+        }
+        .icon-facebook {
+            line-height: 56px;
+        }
+        .instagram {
+            @include size(56px);
+            left: 244px;
+            bottom: -453px;
+        }
+        .icon-instagram {
+            line-height: 56px;
+
+        }
+    }
+
+}

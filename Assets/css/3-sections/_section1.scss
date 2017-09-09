@@ -1,0 +1,267 @@
+p.kicker {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: rgb(18, 27, 35); 
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: rgb(18, 27, 35);
+    margin: 16px 0 48 0;   
+    font-family: 'Droid Serif', serif; 
+}
+
+.container {
+    margin: 0 auto 395px;
+    width: 1210px;
+    @include clearfix;
+
+    .section1 {
+        width: 1210px;
+        position: relative;
+        img {
+            width: 100%;
+            height: 480px;
+            z-index: -1;
+        }
+        .contentBox1 {
+            position: absolute;
+            width: 450px;
+            height: 543px;
+            background: white;
+            bottom: -270px;
+            left: 65px;
+            z-index: 1;
+    
+
+            p.kicker2 {
+                margin: 80px 0 0 90px;
+                text-transform: uppercase;
+                color: $ThemeColor;
+                font-size: 14px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            h2 {
+                margin: 18px 0 32px 90px;
+                text-transform: uppercase;
+                font-size: 45px;  
+                font-family: 'Droid Serif', serif;
+            }
+            p {
+                margin: 0 50px 0 90px;
+                font-size: 20px;
+                font-family: 'Open Sans', sans-serif;
+                color: grey;
+            }
+
+            .cta1 {
+                background: white;
+                color: black;
+                font-size: 14px;
+                font-weight: bold;
+                justify-content: center;
+                width: 235px;
+                height: 60px;
+                border: 2px solid black;
+                margin: 37px 0 0 90px;
+                font-family: 'Open Sans', sans-serif;
+                &:hover {
+                    cursor: pointer;
+                    background: rgb(233, 233, 233);
+                }
+                &:active {
+                    position: relative;
+                    top: 1px;
+                }
+            }
+            
+        }
+        .contentBox2 {
+            position: absolute;
+            width: 270px;
+            height: 274px;
+            background: rgb(40, 40, 40);
+            bottom: -270px;
+            left: 515px;
+            z-index: 1;
+            
+            h2 {
+                color: $ThemeColor;
+                margin: 40px 0 18px 37px;
+                font-size: 20px;
+                font-family: 'Open Sans', sans-serif;
+            }
+            p {
+                color: rgb(153, 153, 153);
+                margin: 0 56px 0 37px;
+                font-size: 17px;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+        .ImageBox1 {
+
+            img {
+            position: absolute;
+            width: 180px;
+            height: 182px;
+            bottom: -270px;
+            left: 965px;
+            z-index: 6;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 35px;
+    }
+    .container {
+        width: 766.73px;
+        margin: 0 0 395px 0;
+        .section1 {
+            width: 766.73px;
+            img {
+                width: 766.73px;
+                height: 330px;
+            }
+            .contentBox1 {
+                position: absolute;
+                width: 354px;
+                height: 354px;
+                left: 30px;
+                top: 214px;
+
+                p.kicker2 {
+                    margin: 38px 0 0 45px;
+                    font-size: 14px; 
+                }
+    
+                h2 {
+                    margin: 15px 0 24px 45px;
+                    font-size: 24px;  
+                }
+                p {
+                    margin: 0 16px 0 45px;
+                    font-size: 14px;
+                }
+    
+                .cta1 {
+                    font-size: 14px;
+                    width: 180px;
+                    height: 39px;
+                    margin: 37px 0 0 90px;
+                }
+            }
+            .contentBox2 {
+                position: absolute;
+                width: 236px;
+                height: 236px;
+                top: 330px;
+                left: 384px;
+
+                h2 {
+                    color: $ThemeColor;
+                    margin: 40px 0 18px 37px;
+                    font-size: 14px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                p {
+                    color: rgb(153, 153, 153);
+                    margin: 0 56px 0 37px;
+                    font-size: 14px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+            }
+            .ImageBox1 {
+                
+                img {
+                position: absolute;
+                width: 120px;
+                height: 120px;
+                bottom: -233px;
+                left: 619px;
+                }
+            }
+        }   
+
+    }
+}
+
+//MOBILE MEDIA QUERY
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 21px;
+    }
+    header {
+        .container {
+            width: 320px;
+            margin: 0 0 395px 0;
+            .section1 {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: 260px;
+                }
+                .contentBox1 {
+                    width: 280px;
+                    height: 365px;
+                    left: 20px;
+                    top: 190px;
+
+                    p.kicker2 {
+                        margin: 38px 0 0 45px;
+                        font-size: 15px; 
+                    }
+    
+                    h2 {
+                        margin: 15px 0 24px 45px;
+                        font-size: 23px;  
+                    }
+                    p {
+                        margin: 0 16px 0 45px;
+                        font-size: 13px;
+                    }
+    
+                    .cta1 {
+                        font-size: 14px;
+                        width: 180px;
+                        height: 39px;
+                        margin: 25px 0 0 54px;
+                    }
+                }
+                .contentBox2 {
+                    width: 280px;
+                    height: 197px;
+                    top: 554px;
+                    left: 20px;
+
+                    h2 {
+                        color: $ThemeColor;
+                        margin: 40px 0 18px 37px;
+                        font-size: 14px;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                    p {
+                        color: rgb(153, 153, 153);
+                        margin: 0 56px 0 37px;
+                        font-size: 14px;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+                .ImageBox1 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+}

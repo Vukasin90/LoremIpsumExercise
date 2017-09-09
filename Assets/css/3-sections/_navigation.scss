@@ -1,0 +1,277 @@
+
+.navigation {
+    width: 100%;
+    height: 70px;
+    background: white;
+    position: relative;
+
+    h3 {
+        margin: 18px 15px;
+        display: inline;
+        float: left;
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+
+        .bold {
+            font-weight: 100;
+        }
+    }
+    .logo {
+
+        .red {
+            color: rgb(217, 75, 56);
+        }
+    }
+.hiddenBar {
+    display: none;
+}
+    .nav {
+        float: right;
+        margin-top: 10px;
+        box-sizing: border-box;
+        ul {
+            margin: 16px 0;
+            
+                
+                li {
+                    display: inline-block;
+                    margin-right: 30px;
+                    text-transform: uppercase;
+                    font-size: 14px; 
+                    font-weight: bold;
+                    height: 38px;
+                    font-family: 'Open Sans', sans-serif;
+                    transition: all 200ms ease-in;
+                    
+
+                    span {
+                        color: gray;
+
+                    }
+
+                    a {
+                        color: inherit;
+                        display: inline-block;
+                        height: 40px;
+                        text-decoration: none;
+                    }
+                    
+                    &:hover {
+                        border-bottom: 4px solid rgb(185, 151, 106);
+                        color: rgb(185, 151, 106);
+                    }
+
+                
+    
+                }
+                    .active {
+                        border-bottom: 4px solid rgb(185, 151, 106);
+                        color: rgb(185, 151, 106);
+                    }
+           
+        }  
+    }
+
+}
+.subMenu {
+    width: 100%;
+    height: 50px;
+    background: black;
+    position: relative;
+
+    .subNav {
+        margin: 0 auto;
+        display: inline-block;
+        position: absolute;
+        left: calc(50% - 288.26px);
+        //display: none;
+
+        &.activeMenu {
+            display: none;
+        }
+        ul {
+            margin: 0 auto;
+            text-align: center;
+            display: inline-block;
+            
+
+            li {
+                display: inline-block;
+                color: white;
+                margin-right: 30px;
+                line-height: 50px;
+                text-align: center;
+
+                li.mobile a {
+                    display: none;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: inherit;
+                    height: 50px;
+                    display: inline-block;
+                    transition: all 200ms ease-in;
+                    &:hover {
+                        color: rgb(172, 141, 99);
+                    }
+                }
+
+            .callUS {
+                font-size: 14px;
+            }
+            }
+            .active2 {
+                color: rgb(172, 141, 99);
+            }
+        }
+
+    }
+
+}
+
+.phoneCTA {
+    @include size(52px);
+    background: white;
+    position: fixed;
+    right: 0;
+    top: 188px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 30px;
+    z-index: 11;
+    cursor: pointer;
+}
+.mailCTA {
+    @include size(52px);
+    background: white;
+    position: fixed;
+    right: 0;
+    top: 245px;
+    text-align: center;
+    line-height: 52px;
+    font-size: 30px;
+    z-index: 11;
+    cursor: pointer;
+}
+
+//TABLET MEDIA QUERY
+
+@media screen and (max-width: 770px) {
+    .navigation {
+        width: 766.73px;
+        .nav {
+            display: none;
+        }
+        .subNav {
+            display: "block";
+        }
+        
+        .sideBar {
+            @include position(fixed, 0px 0px 0px 767px);
+            width: 150px;
+            padding: 30px;
+            background: #333;
+            z-index: 10;
+            transition: all 0.5s ease-out;
+            .nav {
+                display: block;
+                padding: 0;
+                
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        line-height: 40px;
+                        box-sizing: border-box;
+
+
+                    }
+                }
+            }
+            
+            .close2 {
+                color: white;
+                position: absolute;
+                left: 153px;
+                top: 7px;
+                text-decoration: none;
+            }
+
+        }
+        .hiddenBar {
+            display: block;
+        }
+
+        .contact {
+            display: inline-block;
+            position: absolute;
+            left: 589px;
+            font-size: 27px;
+            line-height: 66px;
+            
+        }
+        .mail {
+            display: inline-block;
+            position: absolute;
+            left: 634px;
+            font-size: 27px;
+            line-height: 69.5px
+        }
+        a.toggle {
+            position: absolute;
+            text-decoration: none;
+            color: black;
+            font-size: 36px;
+            line-height: 70px;
+            left: 710px;
+        }
+    }
+    .subMenu {
+        width: 766.73px
+    }
+    .phone {
+        display: none;
+    }
+    .phoneCTA {
+        display: none;
+    }
+    .mailCTA {
+        display: none;
+    }
+}
+
+//MOBILE MEDIA QUERY
+
+@media screen and (max-width: 320px) {
+    .navigation {
+        width: 320px;
+        .nav {
+            display: none;
+        }
+        .contact, .mail {
+            display: none;
+        }
+        a.toggle {
+            z-index: 10;
+            line-height: 193px;
+            left: 148px;
+            
+        }
+        .sideBar {
+            display: none;
+        }
+    }   
+    .subMenu {
+        background: white;
+        width: 320px;
+        margin-top: 0.5px;
+        .subNav {
+            display: none;
+        }
+    } 
+
+
+}
